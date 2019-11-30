@@ -17,7 +17,6 @@ package com.android.systemui.statusbar.policy;
 
 import static com.android.systemui.statusbar.policy.NetworkControllerImpl.TAG;
 
-import android.annotation.NonNull;
 import android.content.Context;
 import android.text.format.DateFormat;
 import android.util.Log;
@@ -167,8 +166,8 @@ public abstract class SignalController<T extends SignalController.State,
     /**
      * Returns the resource if resId is not 0, and an empty string otherwise.
      */
-    @NonNull CharSequence getStringIfExists(int resId) {
-        return resId != 0 ? mContext.getText(resId) : "";
+    protected String getStringIfExists(int resId) {
+        return resId != 0 ? mContext.getString(resId) : "";
     }
 
     protected I getIcons() {

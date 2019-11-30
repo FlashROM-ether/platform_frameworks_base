@@ -214,7 +214,7 @@ class TelephonyIcons {
             0,
             0,
             AccessibilityContentDescriptions.PHONE_SIGNAL_STRENGTH[0],
-            R.string.data_connection_5ge_html,
+            R.string.data_connection_5ge,
             TelephonyIcons.ICON_5G_E,
             true);
 
